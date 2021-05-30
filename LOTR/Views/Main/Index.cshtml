@@ -1,0 +1,50 @@
+﻿@using Microsoft.AspNet.Identity
+@model IEnumerable<LOTR.Domain.Comment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<body>
+@Html.Partial("content")
+<div id="tab" style="display:none">
+    @Html.Partial("_footer")
+</div>
+
+
+<p>
+    @Html.ActionLink("Add comment", "Create")
+</p>
+<table class="table " style="        border-style: ridge;
+                                     border-width: 10px;
+                                     border-color: #8ebf42;
+                                     ">
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CommentAuthor)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateTime)
+                
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                @Html.DisplayFor(modelItem => item.CommentText)
+            </td>
+            <td>
+                @* @if (User.Identity.GetUserId() == item.User.Id) *@
+                @* { *@
+                @*     @Html.ActionLink("Edit", "Edit", new {id = item.Id})  *@
+                @*     @Html.ActionLink("Details", "Details", new {id = item.Id})  *@
+                @*     @Html.ActionLink("Delete", "Delete", new {id = item.Id}) *@
+                @* } *@
+            </td>
+        </tr>
+
+}
+
+</table>
