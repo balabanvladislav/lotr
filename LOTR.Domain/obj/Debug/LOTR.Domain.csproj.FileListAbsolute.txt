@@ -1,0 +1,16 @@
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\LOTR.Domain.dll.config
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\LOTR.Domain.dll
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\LOTR.Domain.pdb
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\EntityFramework.dll
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\EntityFramework.xml
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\obj\Debug\LOTR.Domain.csprojAssemblyReference.cache
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\obj\Debug\LOTR.Domain.csproj.CoreCompileInputs.cache
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\obj\Debug\LOTR.Domain.csproj.CopyComplete
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\obj\Debug\LOTR.Domain.dll
+C:\Users\37360\Desktop\lotr1\LOTR\LOTR.Domain\obj\Debug\LOTR.Domain.pdb

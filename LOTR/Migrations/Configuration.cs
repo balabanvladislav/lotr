@@ -4,7 +4,7 @@ namespace LOTR.Migrations
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
-    using LOTR.Models;
+    using LOTR.Domain;
     using Microsoft.AspNet.Identity;
     using Microsoft.AspNet.Identity.EntityFramework;
 

@@ -1,0 +1,96 @@
+﻿<img id="myImg" src="Content/images/map.png" alt="The map of Middle-earth" style="float:left;width:300px;height:300px; margin-top:12px; margin-left:20px; padding-right:20px">
+
+
+<div id="myModal" class="modal">
+
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+    <div id="caption"></div>
+
+</div>
+
+
+<script>
+var modal = document.getElementById("myModal");
+
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+
+<p style="margin-left:315px;">
+    The Lord of the Rings is an epic high fantasy book by the English author and scholar<br><a href="https://en.wikipedia.org/wiki/J._R._R._Tolkien" target="_blank"> J. R. R. Tolkien.</a> Set in Middle-earth, the world at some distant time in the past, the story began as a sequel to Tolkien's 1937 children's book The Hobbit, but eventually developed into a much larger work. Written in stages between 1937 and 1949, The Lord of the Rings is one of the best-selling books ever written, with over 150 million copies sold.
+
+</p>
+    <div align="right">
+
+        <audio controls>
+            <source src="Music/The Ring Poem read by Christopher Lee.mp3" />
+        </audio>
+
+
+    </div>
+
+
+
+<img src="Content/images/Book.jpg" style="float:right;margin-right:20px;width:250px;height:300px;">
+
+
+<p style="margin-left:315px; margin-top:1px;">The title names the story's main antagonist, the Dark Lord Sauron, who had in an earlier age created the One Ring to rule the other Rings of Power as the ultimate weapon in his campaign to conquer and rule all of Middle-earth. From homely beginnings in the Shire, a hobbit land reminiscent of the English countryside, the story ranges across Middle-earth, following the quest mainly through the eyes of the hobbits Frodo, Sam, Merry and Pippin. </p>
+
+
+<p style="margin-left:315px;" ;>Although generally known to readers as a trilogy, the work was initially intended by Tolkien to be one volume of a two-volume set along with The Silmarillion, but this idea was dismissed by his publisher. For economic reasons, The Lord of the Rings was published in three volumes over the course of a year from 29 July 1954 to 20 October 1955. The three volumes were titled The Fellowship of the Ring, The Two Towers and The Return of the King. Structurally, the work is divided internally into six books, two per volume, with several appendices of background material at the end. Some editions print the entire work into a single volume, following the author's original intent. </p>
+
+
+<div class="but1">
+
+    <button style="background-color:#404040; color:green; border-color:blueviolet; margin-left:40px; " onclick="myFunction1()"> J. R. R. Tolkien's Lord of the Rings books.</button>
+
+</div>
+
+
+<div id="tab1" style="display:none">
+
+    <table style="float:left; width:280px;">
+        <tr>
+            <td>J. R. R. Tolkien's Lord of the Rings books.</td>
+        </tr>
+        <tr>
+            <td ;> * <a href="http://ae-lib.org.ua/texts-c/tolkien__the_lord_of_the_rings_1__en.htm" target="_blank"> The fellowship of the ring </a> </td>
+        </tr>
+        <tr>
+            <td> * <a href="http://ae-lib.org.ua/texts-c/tolkien__the_lord_of_the_rings_2__en.htm" target="_blank"> The two towers </a></td>
+        </tr>
+        <tr>
+            <td> * <a href="http://ae-lib.org.ua/texts-c/tolkien__the_lord_of_the_rings_3__en.htm" target="_blank"> The return of the king </a> </td>
+        </tr>
+    </table>
+
+</div>
+
+
+<p style="margin-left:315px;">Tolkien's work, after an initially mixed reception by the literary establishment, has been the subject of extensive analysis of its themes and origins. Influences on this earlier work, and on the story of The Lord of the Rings, include philology, mythology, religion, earlier fantasy works, and his own experiences in the First World War. The Lord of the Rings in its turn has had a great effect on modern fantasy. </p>
+
+
+<p style="margin-left:315px;"> The Lord of the Rings has since been reprinted many times and translated into at least 56 languages. The enduring popularity of The Lord of the Rings has led to numerous references in popular culture, the founding of many societies by fans of Tolkien's works, and the publication of many books about Tolkien and his works. It has inspired numerous derivative works including artwork, music, films and television, video games, board games, and subsequent literature. Award-winning adaptations of The Lord of the Rings have been made for radio, theatre, and film. It has been named Britain's best novel of all time in the BBC's The Big Read. </p>
+
+
+<div class="but">
+    <button style="background-color:#404040; color:green
+
+; border-color:blueviolet; " onclick="myFunction()">
+        Click to see J.R.R Tolkiens Legendarium
+    </button>
+</div>

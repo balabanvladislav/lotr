@@ -1,0 +1,14 @@
+@font-face {
+   font-family: myFirstFont;
+   src: url(anirm.ttf);
+}
+
+* {
+   font-family: myFirstFont;
+}
+.but{
+  text-align:center;
+}
+.button{
+  position:absolute;
+}

@@ -5,13 +5,13 @@ using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
-using LOTR.BLogic;
+using LOTR.Domain;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
-using LOTR.Models;
+using LOTR.Domain;
 
 namespace LOTR
 {
