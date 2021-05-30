@@ -10,7 +10,7 @@ namespace LOTR.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return RedirectToAction("index", "Main");
         }
     }
 }
