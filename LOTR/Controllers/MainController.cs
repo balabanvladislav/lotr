@@ -21,10 +21,11 @@ namespace LOTR.Controllers
             return View(db.Comments.ToList());
         }
 
+        [Authorize(Roles = "admin")]
         public ActionResult admin()
         {
             @ViewBag.Role = "admin";
-            return View("Index",db.Comments.ToList());
+            return View("Index","",db.Comments.ToList());
         }
         // GET: Main/Details/5
         public ActionResult Details(int? id)
