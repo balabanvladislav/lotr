@@ -85,4 +85,8 @@ div.sticky{
   position: sticky;
   top: 0;
 }
-    
+
+.centrare {
+  width: 800px; 
+  margin: auto;
+}

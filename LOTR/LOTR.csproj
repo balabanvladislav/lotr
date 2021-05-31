@@ -171,6 +171,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MainController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\Role.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -200,6 +201,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Music\The Ring Poem read by Christopher Lee.mp3" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -221,7 +223,7 @@
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Views\Shared\content.cshtml" />
     <Content Include="Views\Shared\_footer.cshtml" />
-    <Content Include="Views\Shared\_header.cshtml" />
+    <Content Include="Views\Shared\_head.cshtml" />
     <Content Include="Views\Shared\_navbar.cshtml" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

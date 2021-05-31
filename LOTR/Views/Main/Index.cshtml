@@ -8,26 +8,24 @@
 
 <body>
 @Html.Partial("content")
-<div id="tab" style="display:none">
-    @Html.Partial("_footer")
-</div>
-
-
-<table class="table " style="width: 820px; margin: 50px auto auto;
-                                     ">
-    <tr>
-        <th colspan="3">
+<br/>
             <div class="but">
                 <button style="background-color:#404040; color:green
                 
                 ; border-color:blueviolet; " onclick="myFunction2()">
-                    Write a comment
+                    Show/ Hidde Comments
                 </button>
             </div>
+<table class="table" id="tab2" style="display:none; width: 800px; margin-left: 335px; 
+                                     ">
+    <tr>
+        <th colspan="3">
+
             @if (User.Identity.IsAuthenticated)
             {
-                @Html.ActionLink("Add comment", "Create", null, new {id = "tab2", style = "display:none"})
+                @Html.ActionLink("Add comment", "Create", null, new {})
             }
+            
             else
             {
                 @Html.ActionLink("Login to write a comment", "Login", "Account")
@@ -52,10 +50,17 @@
                     @Html.ActionLink("  Edit/ ", "Edit", new {id = item.Id})
                     @Html.ActionLink("Delete", "Delete", new {id = item.Id}, new {style = "color:red"})
                 }
+                else
+                {
+                    if (@ViewBag.Role == "admin")
+                    {
+                        @Html.ActionLink("Delete", "Delete", new {id = item.Id}, new {style = "color:red"})
+                    }
+                }
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td colspan="2" width="710px">
                 <br/>
 
                 @Html.DisplayFor(modelItem => item.CommentText)
@@ -71,3 +76,16 @@
     }
 
 </table>
+
+<br/>
+<div class="but">
+    <button style="background-color:#404040; color:green
+
+; border-color:blueviolet; " onclick="myFunction()">
+        Click to see J.R.R Tolkiens Legendarium
+    </button>
+</div>
+
+<div id="tab" style="display:none">
+    @Html.Partial("_footer")
+</div>

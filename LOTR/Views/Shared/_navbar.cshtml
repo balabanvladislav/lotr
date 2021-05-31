@@ -1,8 +1,10 @@
 ﻿<center>
-    <header style="color:#ff8000"> <i>One Ring to rule them all, One Ring to find them, One Ring to bring them all, and in the darkness bind them</i></header>
+    <header style="color:#ff8000">
+        <i>One Ring to rule them all, One Ring to find them, One Ring to bring them all, and in the darkness bind them</i>
+    </header>
 </center>
 <style>
-
+@using Microsoft.AspNet.Identity
     p {
         text-align: justify;
         text-justify: auto;
@@ -90,7 +92,8 @@
 <div class="sticky">
     <div class="navbar">
 
-        <a href=#>Home</a>
+        @Html.ActionLink("Home", "index", "Main")
+        @* <a href=#>Home</a> *@
 
         <div class="dropdown">
 
@@ -164,6 +167,27 @@
 
             </div>
         </div>
-    </div>
+         <div class="dropdown">
+             <a style="color:chartreuse;">|</a>
+         </div>
+        @if (Request.IsAuthenticated)
+        {
+            using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new {id = "logoutForm", @class = "navbar-right", style="color:red;"}))
+            {
+                @Html.AntiForgeryToken()
+                <div class="dropdown">
 
+                    @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new {title = "Manage", style="color:chartreuse;"})
+                </div>
+                <div class="dropdown">
+                    <a href="javascript:document.getElementById('logoutForm').submit()" style="color:red;">Log Out</a>
+                </div>
+            }
+        }
+        else
+        {
+            <div class="dropdown">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new {id = "loginLink", style="color:chartreuse;"})</div>
+        }
+
+    </div>
 </div>

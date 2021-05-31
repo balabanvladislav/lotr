@@ -21,6 +21,11 @@ namespace LOTR.Controllers
             return View(db.Comments.ToList());
         }
 
+        public ActionResult admin()
+        {
+            @ViewBag.Role = "admin";
+            return View("Index",db.Comments.ToList());
+        }
         // GET: Main/Details/5
         public ActionResult Details(int? id)
         {
@@ -114,7 +119,32 @@ namespace LOTR.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        private IEnumerable<Comment> GetMyItems()
+        {
+            string currentUserId = User.Identity.GetUserId();
+            ApplicationUser currentUser = db.Users.FirstOrDefault(
+                x => x.Id == currentUserId);
 
+            IEnumerable<Comment> allComments = db.Comments.ToList().Where(x => x.User == currentUser);
+
+            return allComments;
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AJAXCreate([Bind(Include = "Id,Text")] Comment comment)
+        {
+            if (ModelState.IsValid)
+            {
+                string currentUserId = User.Identity.GetUserId();
+                ApplicationUser currentUser = db.Users.FirstOrDefault(
+                    x => x.Id == currentUserId);
+                comment.User = currentUser;
+                db.Comments.Add(comment);
+                db.SaveChanges();
+            }
+            ModelState.Clear();
+            return PartialView("index", GetMyItems());
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
